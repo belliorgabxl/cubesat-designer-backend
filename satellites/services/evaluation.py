@@ -61,7 +61,6 @@ def simulate_design(placement_doc, modules_by_slug, altitude_km, factors=None):
 
 
 def design_summary(frame, placement_doc, modules_by_slug, altitude_km, factors=None):
-    """Compact figures for list views. Tolerates modules removed from the catalogue since saving."""
     known = {
         "internal": [item for item in placement_doc.get("internal", []) if item.get("module") in modules_by_slug],
         "faces": [item for item in placement_doc.get("faces", []) if item.get("module") in modules_by_slug],

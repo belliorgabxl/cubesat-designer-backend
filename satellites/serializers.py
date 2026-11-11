@@ -37,7 +37,6 @@ def module_to_dict(module):
         "model_url": module.model_file.url if module.model_file else None,
         "description": module.description,
     }
-    # Sent with the module so the builder never re-implements the mounting rule.
     data["allowed_faces"] = {str(size): placement_rules.allowed_faces(data, size) for size in FRAME_SIZES}
     return data
 

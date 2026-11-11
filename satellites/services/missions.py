@@ -1,7 +1,4 @@
-"""Which module categories each mission needs."""
 
-# A requirement may narrow a category to matching slugs: an Earth-observation
-# payload has to be a camera, not just any sensor.
 MISSION_REQUIREMENTS = {
     "EARTH_OBSERVATION": [
         {"category": "PAYLOAD", "slug_contains": "camera", "label": "กล้องถ่ายภาพ (PAYLOAD)"},

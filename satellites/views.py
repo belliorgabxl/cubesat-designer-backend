@@ -123,9 +123,7 @@ def summarize(design, modules):
     )
 
 
-# --- Auth --------------------------------------------------------------------
 
-# Django's bundled Thai translation does not cover these validators.
 VALIDATION_MESSAGES_TH = {
     "password_too_short": "รหัสผ่านสั้นเกินไป ต้องมีอย่างน้อย 8 ตัวอักษร",
     "password_too_common": "รหัสผ่านนี้พบได้บ่อยเกินไป",

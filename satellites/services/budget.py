@@ -1,4 +1,3 @@
-"""Mass, volume (slot) and power budgets. Module and frame arguments are plain dicts."""
 
 MASS_WARNING_RATIO = 0.9
 
@@ -26,7 +25,6 @@ def mass_budget(frame, modules):
 
 
 def slot_budget(frame, internal_placements, modules_by_slug):
-    """Occupancy of the frame's slots, plus any overlapping or out-of-range slots."""
     total = frame["slot_count"]
     owners = {}
     conflicts = set()

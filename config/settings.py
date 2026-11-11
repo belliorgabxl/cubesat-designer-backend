@@ -75,15 +75,11 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# The Next.js dev server proxies /api/* to Django, so browsers see one origin.
-# Django still has to trust that origin because the proxy rewrites the Host header.
 FRONTEND_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
 CSRF_TRUSTED_ORIGINS = FRONTEND_ORIGINS
 CORS_ALLOWED_ORIGINS = FRONTEND_ORIGINS
 CORS_ALLOW_CREDENTIALS = True
 
-# --- Budget model tunables ---------------------------------------------------
-# Average share of a panel's peak output while the satellite is in sunlight.
 SOLAR_ORIENTATION_FACTORS = {
     "SOLAR_BODY": 0.5,
     "SOLAR_DEPLOYABLE": 0.75,
